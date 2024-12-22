@@ -1,27 +1,13 @@
 {
   "files": {
     "main.css": "/test/static/css/main.f029a054.css",
-    "main.js": "/test/static/js/main.9cf2f86e.js",
-    "static/css/650.017fc3d3.chunk.css": "/test/static/css/650.017fc3d3.chunk.css",
-    "static/js/650.048af692.chunk.js": "/test/static/js/650.048af692.chunk.js",
-    "static/css/259.8758edbf.chunk.css": "/test/static/css/259.8758edbf.chunk.css",
-    "static/js/259.440aa68f.chunk.js": "/test/static/js/259.440aa68f.chunk.js",
-    "static/media/loginbg.jpg": "/test/static/media/loginbg.d06d303c6b0cd613cc6a.jpg",
-    "static/media/bootstrap-icons.woff?": "/test/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/test/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/woff2": "/test/static/media/b848a2d721d14ae058c222b6d6b660b654b32f1f060ae92faba6fb33a0216ca8.864d6171418cf6bbab54.woff2",
-    "static/media/user0.PNG": "/test/static/media/user0.8d49e377c7c342895ec2.PNG",
-    "static/media/hasel-novin (1).svg": "/test/static/media/hasel-novin (1).d67c3d253a3654fcad3f74e002c01acd.svg",
+    "main.js": "/test/static/js/main.46e8bc60.js",
     "index.html": "/test/index.html",
     "main.f029a054.css.map": "/test/static/css/main.f029a054.css.map",
-    "main.9cf2f86e.js.map": "/test/static/js/main.9cf2f86e.js.map",
-    "650.017fc3d3.chunk.css.map": "/test/static/css/650.017fc3d3.chunk.css.map",
-    "650.048af692.chunk.js.map": "/test/static/js/650.048af692.chunk.js.map",
-    "259.8758edbf.chunk.css.map": "/test/static/css/259.8758edbf.chunk.css.map",
-    "259.440aa68f.chunk.js.map": "/test/static/js/259.440aa68f.chunk.js.map"
+    "main.46e8bc60.js.map": "/test/static/js/main.46e8bc60.js.map"
   },
   "entrypoints": [
     "static/css/main.f029a054.css",
-    "static/js/main.9cf2f86e.js"
+    "static/js/main.46e8bc60.js"
   ]
 }
