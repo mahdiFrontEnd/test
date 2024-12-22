@@ -1,0 +1,10 @@
+.readOnly .date-input-with-dialog-calendar {
+  display: none;
+}
+.date-input-with-dialog-empty {
+  display: none;
+}
+
+.date-input-with-dialog-calendar {
+  left: 1em;
+}

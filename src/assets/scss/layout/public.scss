@@ -1,0 +1,388 @@
+@use '../variables';
+
+
+a {
+  text-decoration: none !important;
+}
+
+
+.orangeText {
+  color: variables.$primary;
+}
+
+.greenText {
+  color: variables.$success;
+}
+
+.redText {
+  color: variables.$danger;
+}
+
+.blueText {
+  color: variables.$info;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.defBtn {
+  font-size: 13px;
+  padding: 2px 10px;
+  border: none;
+  height: 32px;
+  border-radius: 0.3rem;
+  width: fit-content;
+  white-space: nowrap;
+
+
+  &.orangeBtn {
+    background-color: variables.$primary;
+    color: white;
+
+    &:hover {
+      opacity: 0.8 !important;
+      color: white !important;
+      background-color: variables.$primary !important;
+    }
+  }
+
+  &.greenBtn {
+    background-color: variables.$success;
+    color: white;
+
+    &:hover {
+      opacity: 0.8 !important;
+      color: white !important;
+      background-color: variables.$success !important;
+    }
+  }
+
+  &.redBtn {
+    background-color: variables.$danger;
+    color: white;
+
+    &:hover {
+      opacity: 0.8 !important;
+      color: white !important;
+      background-color: variables.$danger !important;
+    }
+  }
+
+  &.blueBtn {
+    background-color: variables.$info;
+    color: white;
+
+    &:hover {
+      opacity: 0.8 !important;
+      color: white !important;
+      background-color: variables.$info !important;
+    }
+  }
+
+  &.grayBtn {
+    background-color: variables.$gray-600;
+    color: white;
+
+    &:hover {
+      opacity: 0.8 !important;
+      background-color: variables.$gray-600 !important;
+      color: white !important;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.7 !important;
+  }
+
+}
+
+.defIconBtn {
+
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 0.3rem;
+  white-space: nowrap;
+  padding: 0;
+
+
+  &.orangeIconBtn {
+    background-color: variables.$primary;
+    color: white;
+
+    &:hover {
+      opacity: 0.8 !important;
+      color: white !important;
+      background-color: variables.$primary !important;
+    }
+  }
+
+  &.grayIconBtn {
+    background-color: #dedede;
+    color: #000000;
+
+    &:hover {
+      color: white !important;
+      opacity: 0.8 !important;
+      background-color: #dedede !important;
+    }
+  }
+
+  &.greenIconBtn {
+    background-color: variables.$success;
+    color: white;
+
+    &:hover {
+      color: white !important;
+      opacity: 0.8 !important;
+      background-color: variables.$success !important;
+    }
+  }
+
+  &.redIconBtn {
+    background-color: variables.$danger;
+    color: white;
+
+    &:hover {
+      color: white !important;
+      opacity: 0.8 !important;
+      background-color: variables.$danger !important;
+    }
+  }
+
+  &.blueIconBtn {
+    background-color: variables.$info;
+    color: white;
+
+    &:hover {
+      color: white !important;
+      opacity: 0.8 !important;
+      background-color: variables.$info !important;
+    }
+  }
+
+
+  &:disabled {
+    opacity: 0.7 !important;
+  }
+
+}
+
+.dexwuP, .kjicut {
+  gap: 5px;
+  align-items: center;
+}
+
+.searchBox .ant-collapse-header {
+  padding: 0 !important;
+}
+
+.keyValue {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+
+  .key {
+    white-space: nowrap;
+    font-size: 14px;
+    color: #545454;
+  }
+
+  .value {
+    font-size: 14px;
+    color: #2a2a2a;
+    font-weight: bold;
+  }
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.circleImageMini {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+}
+
+.min-w-100 {
+  min-width: 60px;
+}
+
+.doneIcon {
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
+  padding: 5px;
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-tree-select-dropdown .ant-select-tree .ant-select-tree-treenode-disabled .ant-select-tree-node-content-wrapper {
+  color: #8a8a8a !important;
+}
+
+.PasswordCheck li {
+  align-items: center !important;
+  gap: 7px;
+  margin-bottom: 6px !important;
+}
+
+
+.changeBg {
+  transition: all 0.3s linear;
+  background-color: rgba(25, 93, 0, 0.12) !important;
+}
+
+figure.table table {
+  width: 100%;
+
+}
+
+figure.table tr:nth-child(odd) {
+  background-color: #ffffff;
+
+}
+
+figure.table tr {
+
+  border-bottom: 1px solid #d3d3d3;
+}
+
+figure.table td {
+  padding: 7px 12px;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #e0e0e0 !important;
+}
+
+.card-body {
+  border: 1px solid #e7e7e7;
+}
+
+.defBorder {
+  border: 1px solid #e7e7e7;
+}
+
+ol.breadcrumb {
+  margin-bottom: 0 !important;
+}
+
+
+.bgColorTransparent {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+
+.bounce2 {
+  animation: bounce2 1s ease infinite;
+}
+
+@keyframes bounce2 {
+  0%, 20%, 50%, 70%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-25px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.dropdown-item.active, .dropdown-item:active {
+  color: gray;
+  background-color: #fcfcfc;
+}
+
+.h-fit-content {
+  height: fit-content;
+}
+
+.mainTitle {
+
+  white-space: nowrap;
+  margin-top: 4px;
+
+
+}
+
+.ellipsis-column {
+  max-width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 21, 21, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pointer-event{
+  pointer-events: none;
+}
+.w-md-280{
+  width: 100%;
+}
+@media (min-width: 992px) {
+
+
+  .w-lg-250 {
+    width: 250px !important;
+  }
+  .w-lg-300 {
+    width: 300px !important;
+  }
+
+
+}
+@media (min-width: 724px) {
+
+
+  .w-md-280 {
+    width: 280px !important;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+
+  .mainTitle {
+    width: 100%;
+
+
+  }
+
+
+}
+

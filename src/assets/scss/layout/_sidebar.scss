@@ -1,0 +1,268 @@
+.sidebarArea {
+  flex-shrink: 0;
+  background-color: $body-bg;
+  transition: all 0.3s ease;
+  position: fixed;
+  padding: 0 0.5rem;
+  z-index: 99;
+  top: $topbarHeight;
+
+  ul.nav {
+    > .nav-item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .sidebarBox {
+    height: calc(100vh - $topbarHeight - 10px);
+    width: $sidebarWidth;
+    transition: all 0.3s ease;
+    overflow: auto;
+    border: 1px solid #e7e7e7;
+    //box-shadow: 0 0 8px #bfbfbf !important;
+  }
+
+  .nav-item.activeParent > .nav-link {
+    background: $white;
+    color: $dark;
+    border-radius: 4px;
+    opacity: 1;
+  }
+
+  .fixedSidebar {
+    position: fixed;
+  }
+
+  .navCaption {
+    font-size: 0.775rem;
+    padding: 5px 15px;
+    width: 100%;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-item.activeParent > .nav-link {
+    opacity: 1;
+  }
+
+  .nav-link {
+    color: inherit;
+    opacity: 0.65;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    white-space: nowrap;
+
+    svg {
+      width: 21px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .lightText {
+    color: $white;
+  }
+
+  .activeLink .nav-link {
+    opacity: 1;
+    font-weight: 500;
+  }
+
+  .subMenu {
+    padding: 0;
+    list-style: none;
+    transition: all 0.3s ease;
+
+    .nav-link {
+      padding: 9px 15px;
+    }
+
+    .sidebarIcon {
+      visibility: hidden;
+    }
+  }
+}
+
+.sidebarOverlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.horizontalNav {
+  position: relative;
+  z-index: 1;
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link {
+    color: inherit;
+    opacity: 0.65;
+    display: flex;
+    padding: 15px 12px;
+    transition: all 0.3s ease;
+
+    svg {
+      width: 21px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .firstDD {
+    .nav-link {
+      padding: 9px 15px;
+
+      &:hover {
+        padding-left: 20px;
+      }
+    }
+
+    svg {
+      width: 18px;
+    }
+  }
+
+  .lightText {
+    color: $white;
+  }
+
+  .activeLink .nav-link {
+    opacity: 1;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .horizontalNav {
+    &.fixedSidebar {
+      position: fixed;
+      width: 100%;
+    }
+
+    .firstDD {
+      position: absolute;
+      min-width: 250px;
+      padding: 10px;
+      display: none;
+      box-shadow: $box-shadow;
+      border-radius: $border-radius;
+    }
+
+    .nav-item:hover .firstDD {
+      display: block;
+    }
+  }
+  .HsidebarFixed {
+    padding-top: 64px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .sidebarArea {
+    position: fixed;
+    height: 100%;
+    z-index: 99;
+    right: -280px;
+    transition: all 0.3s ease;
+
+    &.showSidebar {
+      right: 0;
+    }
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+  .isMiniSidebar {
+    .sidebarArea {
+      width: $miniSidebarWidth;
+
+      .sidebarBox {
+        width: $miniSidebarWidth;
+
+        .navCaption {
+          display: none;
+        }
+
+        &:hover {
+          //width: $sidebarWidth;
+
+          .hide-mini {
+            transition: all 0.3s ease;
+            display: block;
+          }
+
+          .navCaption {
+            transition: all 0.3s ease;
+            display: block;
+          }
+        }
+
+        .hide-mini {
+          display: none;
+
+          .navCaption {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// skin white
+.sidebarArea {
+  .sidebarBox {
+    &.bg-white {
+      .nav-item.activeParent > .nav-link,
+      .nav > .activeLink .nav-link {
+        // background: $theme-colors;
+        color: $primary;
+        border-radius: $border-radius;
+      }
+    }
+  }
+}
+
+.inbox-number {
+  background: #f78e20;
+  padding: 0px 10px;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+}
+
+.isMiniSidebar .inbox-number {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  font-size: 12px;
+  padding: 0 7px;
+}
+
+.isMiniSidebar .nav-item {
+  position: relative;
+}
+
+.sidebarArea .sidebarIcon .bi {
+  font-size: 20px;
+  display: flex;
+}
+
+:where(.css-dev-only-do-not-override-18qxqo0).ant-menu-light.ant-menu-root.ant-menu-inline {
+  border-inline-end: none !important;
+  //border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+}

@@ -1,0 +1,88 @@
+@import url('~leaflet/dist/leaflet.css');
+@import url('~react-leaflet-markercluster/dist/styles.css');
+
+.leaflet-container {
+     height: calc(100vh - 200px);
+    width: 100%;
+    z-index: 0;
+ 
+}
+
+.zoom-slider {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.basemaps-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    height: auto;
+    width: auto;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.basemaps-container select {
+    width: 200px;
+    height: 20px;
+}
+
+.geojson-toggle {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    z-index: 1000;
+    margin-top: 20px;
+    background: white;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.leaflet-div-icon {
+    background: transparent;
+    border: none;
+}
+
+.leaflet-popup-content {
+    margin: 0 !important;
+
+}
+
+.mapMoreElement {
+    position: absolute;
+    top: 10px;
+    left: 44px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    border-radius: 4px;
+    background-color: white;
+    /*z-index: 10;*/
+}
+
+.mapMoreElementItem {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .leaflet-container {
+        height: calc(100vh - 300px);
+        min-height: 250px;
+
+
+    }
+}

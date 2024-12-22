@@ -1,0 +1,416 @@
+body {
+  font-family: $font-family-sans-serif;
+  word-break: break-word;
+}
+
+.row {
+  margin: auto;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.pageWrapper {
+  min-height: 100vh;
+}
+
+
+.boxContainer {
+  max-width: 1420px;
+}
+
+.card {
+  margin-bottom: 30px;
+  box-shadow: $box-shadow;
+  background-color: white;
+}
+
+.table-borderless > :not(caption) > * > * {
+  background-color: white;
+}
+
+.leaflet-bottom.leaflet-right {
+  display: none !important;
+}
+
+.leaflet-tooltip {
+  min-width: 30px;
+  text-align: center;
+}
+
+.dropdown-menu {
+  box-shadow: $box-shadow;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.circle-box {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 100%;
+
+  &.lg-box {
+    width: 60px;
+    height: 60px;
+    font-size: 21px;
+    line-height: 60px;
+  }
+
+  &.md-box {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+  }
+}
+
+.button-group .btn {
+  margin: 3px;
+}
+
+.btn-white {
+  border: 1px solid $border-color;
+}
+
+.simplebar-scrollbar:before {
+  background: #a0a0a0;
+}
+
+.apexcharts-toolbar {
+  z-index: 0 !important;
+}
+
+.leftRightBox {
+  overflow: hidden;
+}
+
+.op-3 {
+  opacity: 0.3;
+}
+
+/*************Left right two column ***************/
+.leftPart {
+  width: 300px;
+  min-height: calc(100vh - 200px);
+  position: relative;
+  transition: 0.1s ease-in;
+
+  .openCloseBtn {
+    position: absolute;
+    right: -42px;
+    top: 13px;
+  }
+}
+
+.threeColumn {
+  .leftPart {
+    width: 250px;
+  }
+}
+
+.rightPart {
+  flex-grow: 1;
+  min-height: calc(100vh - 200px);
+  transition: 0.1s ease-in;
+}
+
+.closeRbtn {
+  left: 15px;
+  top: 15px;
+  z-index: 2;
+  position: absolute;
+}
+
+.contentOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+}
+
+@include media-breakpoint-down(lg) {
+  .leftPart {
+    position: absolute;
+    left: -300px;
+    z-index: 1;
+    box-shadow: $box-shadow;
+
+    &.showLeftPart {
+      left: 0;
+    }
+  }
+  .threeColumn {
+    .rightPart {
+      position: absolute;
+      right: -100%;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+
+      &.showRightPart {
+        right: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .threeColumn {
+    .leftPart {
+      left: -250px;
+      position: absolute;
+      z-index: 1;
+      box-shadow: $box-shadow;
+
+      &.showLeftPart {
+        left: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .threeColumn {
+    .leftPart {
+      width: 250px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .middlePart {
+    width: 300px;
+    border-right: 1px solid $border-color;
+    min-height: calc(100vh - 200px);
+    position: relative;
+    transition: 0.1s ease-in;
+  }
+}
+
+.small-descrition {
+  padding: 0 1rem 1rem;
+}
+
+.loginBox {
+  height: 100vh;
+  background-image: url("/assets/images/background/loginbg.jpg");
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0.7;
+}
+
+@media (min-width: 1250px) {
+
+  //.loginContainer {
+  //  margin: auto;
+  //
+  //  .loginInner {
+  //    position: absolute;
+  //    right: 0;
+  //    top: 0;
+  //    width: 40vw;
+  //    height: 100vh;
+  //    background-color: white;
+  //
+  //    .loginForm {
+  //      width: 70%;
+  //      margin: auto;
+  //      position: relative;
+  //    }
+  //
+  //    .logoLogin.small {
+  //      display: none;
+  //    }
+  //  }
+  //}
+
+  //.logoLogin {
+  //  position: absolute;
+  //  // transform: translate(-50%, -50%);
+  //  // top: 50%;
+  //  transform: translate(-50%, 50%);
+  //  top: 0;
+  //  left: 40%;
+  //}
+
+}
+
+@media (max-width: 1250px) {
+
+  //.logoLogin.larg {
+  //  position: relative;
+  //  right: 50px;
+  //  top: 10px;
+  //  display: none;
+  //}
+
+  .loginContainer {
+    //height: 100vh;
+    //background-color: $primary;
+    //position: relative;
+    // overflow-y: auto;
+
+    .loginInner {
+
+      //width: 60%;
+      //margin: auto;
+      // overflow-y: auto;
+      //position: absolute;
+      // transform: translate(-50%, -50%);
+      //top: 50%;
+      //left: 50%;
+
+      .loginForm {
+        //width: 90%;
+        //margin: auto;
+        //position: relative;
+      }
+
+      //.logoLogin.small {
+      //  display: none;
+      //}
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  //.logoLogin.larg {
+  //  display: none;
+  //}
+
+  //.loginContainer {
+  //  .loginInner {
+  //    position: absolute;
+  //    // right: 0;
+  //    top: 0;
+  //    width: 100%;
+  //    height: 100vh;
+  //    overflow: auto;
+  //    transform: translate(-50%, -50%);
+  //    top: 50%;
+  //    left: 50%;
+  //
+  //    .loginForm {
+  //      width: 90%;
+  //      margin: auto;
+  //      position: relative;
+  //    }
+  //
+  //    // .logoLogin.small {
+  //    //   display: block;
+  //    // }
+  //  }
+  //}
+
+  //.bg-eff {
+  //  display: none;
+  //
+  //}
+}
+
+
+//.loginInner .back {
+//  position: absolute;
+//  bottom: 8px;
+//  right: 8px;
+//}
+
+.table > :not(:first-child) {
+  border-width: 0;
+}
+
+table th {
+  font-weight: 500;
+}
+
+.text-dark-white {
+  color: #fff !important;
+}
+
+.custom-table tbody {
+  tr {
+    border-left: 3px solid transparent;
+
+    &:hover,
+    &.active {
+      border-left: 3px solid $primary;
+    }
+  }
+}
+
+// for editor
+.rdw-embedded-modal {
+  left: unset !important;
+  right: 5px !important;
+  height: auto !important;
+}
+
+.rdw-embedded-modal-header-option {
+  width: 100% !important;
+}
+
+.Toastify__toast {
+  font-family: $font-family-sans-serif;
+}
+
+.error-box {
+  background: #ec2929;
+  width: 100%;
+  position: relative;
+  top: -15px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  right: 0;
+}
+
+
+.defInput {
+  max-width: 400px;
+  width: 100%;
+
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.css-g1d714-ValueContainer {
+  max-height: 26px;
+  //overflow: auto !important;
+}
+
+.css-g1d714-ValueContainer::-webkit-scrollbar {
+  width: 10px !important;
+  // display: none;
+}
+
+.ReactTable .rt-resizer {
+  width: 10px !important;
+  right: -6px !important;
+}
+
+.leftBoxDashboard {
+  width: 340px;
+}
+@media (max-width: 768px) {
+
+  .leftBoxDashboard {
+    width: 100%;
+  }
+
+}
+

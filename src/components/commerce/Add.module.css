@@ -1,0 +1,30 @@
+.purchaseDetail .navTabs {
+  border: none;
+  min-width: max-content;
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+.purchaseDetail .navTabs li {
+  font-size: 14px;
+}
+
+.purchaseDetail .navTabs li a {
+  font-size: 14px;
+  background-color: #f8f9fa;
+  color: #aaaaaa;
+  border-color: #e6e6e6;
+  cursor: pointer;
+
+  border-bottom: 1px solid #dee2e6 !important;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.main {
+  background-color: #f8f9fa;
+  border: 1px solid #e6e6e6;
+  /* min-height: 600px; */
+  margin-right: 1rem;
+}

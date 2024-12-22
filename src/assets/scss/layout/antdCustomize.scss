@@ -1,0 +1,92 @@
+.ant-table-content {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .ant-table-cell {
+    white-space: nowrap;
+    font-size: 12px;
+    text-align: center !important;
+  }
+}
+
+.ant-select-selector, .ant-picker-range {
+  //height: 36.5px !important;
+}
+
+
+.red20,
+.ant-table-wrapper .red20 .ant-table-cell-fix-left,
+.ant-table-wrapper .red20 .ant-table-cell-fix-right {
+  background-color: #fff6ec;
+
+}
+
+.ant-table-row:hover {
+  cursor: pointer;
+}
+
+.h32 .ant-select-selector {
+
+  height: 32px !important;
+}
+
+.w120 .ant-select-selector {
+  width: 120px !important;
+}
+
+.ant-dropdown-menu-item {
+  padding: 0 5px !important;
+}
+
+.hiddenArrow .ant-dropdown-menu-submenu-arrow {
+  display: none;
+}
+
+.ant-dropdown .anticon.anticon-right.ant-collapse-arrow {
+  -webkit-transform: scaleX(1) !important;
+  transform: scaleX(1) !important;
+}
+
+.text-center * {
+  text-align: center !important;
+}
+
+.ltr * {
+  direction: ltr !important;
+}
+
+.defTable .ant-table-cell {
+  padding: 3px;
+}
+
+.ant-tabs-nav:before {
+  content: none !important;
+}
+
+.ant-modal .ant-modal-header {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 10px;
+}
+
+.ant-modal .ant-modal-footer {
+  border-top: 1px solid #eeeeee;
+  padding-top: 10px;
+}
+
+
+
+.ant-spin.ant-spin-spinning{
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+}
+
+.defWords .ant-tag:hover{
+background-color: #d2d2d2 !important;
+}
+
+
+.ant-table-cell-with-append{
+  display: flex;
+  align-items: center;
+}

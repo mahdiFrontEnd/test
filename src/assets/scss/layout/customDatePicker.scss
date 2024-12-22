@@ -1,0 +1,121 @@
+:root {
+  --rmdp-primary-yellow: #fa8c16;
+  --rmdp-secondary-yellow: #ea861b;
+  --rmdp-shadow-yellow: #f6aa59;
+  --rmdp-today-yellow: #e58423;
+  --rmdp-hover-yellow: #fff4e6;
+  --rmdp-deselect-yellow: #d78834;
+}
+
+.custom-date-picker .rmdp-day {
+  width: 100%;
+  height: 120px;
+
+}
+
+.orange {
+  &.rmdp-wrapper {
+    width: 100%;
+    border: 1px solid #eaeaea
+  }
+
+  &.rmdp-shadow {
+    box-shadow: none
+  }
+
+  .rmdp-rtl {
+    width: 100%;
+  }
+
+  .rmdp-day-picker > div {
+    width: 100%;
+  }
+
+  .rmdp-calendar :focus {
+    outline-color: unset;
+    border-radius: 3px;
+  }
+
+  .rmdp-panel-body li {
+    background-color: var(--rmdp-primary-yellow);
+    box-shadow: 0 0 2px var(--rmdp-secondary-yellow);
+  }
+
+  .rmdp-day.rmdp-selected span:not(.highlight) {
+    background-color: var(--rmdp-hover-yellow);
+    color: black;
+  }
+
+  .rmdp-week-day {
+    color: var(--rmdp-primary-yellow);
+    flex: 1;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .rmdp-day.rmdp-deactive {
+    color: var(--rmdp-secondary-yellow);
+  }
+
+  .rmdp-range {
+    background-color: var(--rmdp-primary-yellow);
+    box-shadow: 0 0 3px var(--rmdp-shadow-yellow);
+  }
+
+  .rmdp-arrow {
+    border: solid var(--rmdp-primary-yellow);
+    border-width: 0 2px 2px 0;
+  }
+
+  .rmdp-arrow-container:hover {
+    background-color: var(--rmdp-primary-yellow);
+    box-shadow: 0 0 3px var(--rmdp-secondary-yellow);
+  }
+
+  .rmdp-panel-body::-webkit-scrollbar-thumb {
+    background: var(--rmdp-primary-yellow) !important;
+  }
+
+  .rmdp-day.rmdp-today span {
+    background-color: var(--rmdp-today-yellow);
+  }
+
+  .rmdp-rtl .rmdp-panel {
+    border-left: unset;
+    border-right: 1px solid var(--rmdp-secondary-yellow);
+  }
+
+  .rmdp-day.rmdp-selected span:not(.highlight) {
+    //background-color: var(--rmdp-primary-yellow);
+    box-shadow: none;
+  }
+
+  .rmdp-day:not(.rmdp-day-hidden) span:hover {
+    background-color: var(--rmdp-hover-yellow) !important;
+    color: #000 !important;
+  }
+
+  .b-deselect {
+    color: var(--rmdp-deselect-yellow);
+    background-color: white;
+  }
+
+  .rmdp-action-button {
+    color: var(--rmdp-primary-yellow);
+  }
+
+  .rmdp-button:not(.rmdp-action-button) {
+    background-color: var(--rmdp-primary-yellow);
+  }
+
+  .rmdp-button:not(.rmdp-action-button):hover {
+    background-color: var(--rmdp-deselect-yellow);
+  }
+}
+
+
+@media (max-width: 1200px) {
+
+  .custom-date-picker .rmdp-day {
+    height: 45px;
+  }
+}
